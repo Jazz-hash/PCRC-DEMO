@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- FAVICONS ICON -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<!-- PAGE TITLE HERE -->
+	<title>Covid 19</title>
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/flaticon/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="plugins/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-9.css">
+	<link rel="stylesheet" type="text/css" href="css/templete.min.css">
+	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+    	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<!-- Revolution Slider Css -->
+	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+		</style>
+</head>
+<body id="bg" class="covid-home">
+	<div id="loading-area"></div>
+	<div class="page-scroll"></div>
+	<div class="page-wraper">
+		<!-- header -->
+		<div class="sticky-header main-bar-wraper navbar-expand-lg">
+            <div class="main-bar clearfix ">
+                <div class="container clearfix">
+                    <!-- website logo -->
+                    <div class="logo-header mostion"><a href="index.html"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
+                    <!-- nav toggle button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+                    <!-- main nav -->
+                    <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="nav navbar-nav">
+							<li  class="active"> 
+								<a href="index.html">Home</a>
+							
+							</li>
+							<li> 
+								<a href="feedback.html">Feedback</a>
+							
+							</li>
+							<li> 
+								<a href="refrences.html">References</a>
+							
+							</li>
+						</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- header END -->
+		<!-- Content -->
+		<div class="page-content">
+			<!-- About Company -->
+			<div class="section-full content-inner bg-white">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-6 col-md-12 align-self-center m-b30">
+							<div class="section-head covid-head m-b20">
+								<h2 class="title">Pakistan <span class="text-red">(COVID-19)</span> Resourse Center</h2>
+								<p class="m-b15">We thank our hardworking doctors and nurses. The real
+									<strong>heros</strong> who help us prevent this .</p>
+							</div>
+							<ul class="list-check primary">
+								<li>Nationalwide Cases: <span class="text-red">303089</span></li>
+								<li>Nationwide Recoveries: <span class="text-green">303089</span></li>
+								<li>Nationwide Deceased: <span class="text-black-50">303089</span></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-12 m-b30">
+							<div class="covid-about-img">
+								<img src="images/about/pic1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- About Company END -->
+			<div class="section-full bg-gray content-inner covid-symptom">
+				<div class="section-head covid-head text-center">
+					<h2 class="title">Coronavirus <span class="text-primary">Data</span></h2>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<div id="simple-line-chart" class="ct-chart ct-golden-section"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<div id="smil-animations" class="ct-chart ct-golden-section"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- Why Choose Us  -->
+			<div class="section-full content-inner bg-gray">
+				<div class="container">
+					<div class="section-head covid-head text-center">
+						<h2 class="title">COVID-19 <span class="text-primary">Prevention</span></h2>
+						<p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the. dummy text of the printing and typesetting industry</p>
+					</div>
+					<div class="row text-center">
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="icon-bx-wraper center covid-icon-bx">
+								<div class="icon-xl"> <a href="#" class="icon-cell"><img src="images/icons/icon1.jpg"
+											alt="" /></a> </div>
+								<div class="icon-content">
+									<h5 class="dez-tilte">Wash Your Hands</h5>
+									<p>Wash your hands frequently and regularly with an alcohol based hand rub or wash
+										them with soap and water.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="icon-bx-wraper center covid-icon-bx">
+								<div class="icon-xl"> <a href="#" class="icon-cell"><img src="images/icons/icon2.jpg"
+											alt="" /></a> </div>
+								<div class="icon-content">
+									<h5 class="dez-tilte">Use Soap or Sanitizer</h5>
+									<p>Use alcohol based hand sanitizer or soap when you wash your hands. Keep wash yor
+										hands at least 20 minute.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="icon-bx-wraper center covid-icon-bx">
+								<div class="icon-xl"> <a href="#" class="icon-cell"><img src="images/icons/icon3.jpg"
+											alt="" /></a> </div>
+								<div class="icon-content">
+									<h5 class="dez-tilte">Avoid Crowded Places</h5>
+									<p>Hands touch many surfaces and can pick up viruses. So, hands can transfer the
+										virus to your eyes, nose.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="icon-bx-wraper center covid-icon-bx">
+								<div class="icon-xl"> <a href="#" class="icon-cell"><img src="images/icons/icon4.jpg"
+											alt="" /></a> </div>
+								<div class="icon-content">
+									<h5 class="dez-tilte">Wear Face Mask</h5>
+									<p>Wear sergical mask and avoid touching face. Hands touch many surfaces and can
+										pick up viruses once contaminated.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="icon-bx-wraper center covid-icon-bx">
+								<div class="icon-xl"> <a href="#" class="icon-cell"><img src="images/icons/icon5.jpg"
+											alt="" /></a> </div>
+								<div class="icon-content">
+									<h5 class="dez-tilte">Avoid Contact Sick People</h5>
+									<p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash
+										them with soap.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+							<div class="icon-bx-wraper center covid-icon-bx">
+								<div class="icon-xl"> <a href="#" class="icon-cell"><img src="images/icons/icon6.jpg"
+											alt="" /></a> </div>
+								<div class="icon-content">
+									<h5 class="dez-tilte">Avoid Crowded Places</h5>
+									<p>Wash your hands frequently and regularly with an alcohol based hand rub or wash
+										them with soap and water.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Why Choose Us END -->
+			<!-- Services -->
+			<div class="section-full bg-primary content-inner bg-img-fix overlay-primary-dark"
+				style="background-image:url(images/background/bg11.jpg);" id="services">
+				<div class="container">
+					<div class="section-head covid-head text-center text-white">
+						<h2 class="title">Follow Steps to Wash Hands</h2>
+						<p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the. dummy text of the printing and typesetting industry</p>
+					</div>
+					<div class="section-content ">
+						<div class="row d-flex justify-content-center">
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic1.png" alt=""></div>
+									<h4 class="dez-title">Wet your hands</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic2.png" alt=""></div>
+									<h4 class="dez-title">Apply soap</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic3.png" alt=""></div>
+									<h4 class="dez-title">Rub hands palm to palm</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic4.png" alt=""></div>
+									<h4 class="dez-title">Rub your dorsums</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic5.png" alt=""></div>
+									<h4 class="dez-title">Rub between fingers</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic6.png" alt=""></div>
+									<h4 class="dez-title">Rub the back of the fingers</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic7.png" alt=""></div>
+									<h4 class="dez-title">Rotation rub the thumbs</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic8.png" alt=""></div>
+									<h4 class="dez-title">Rub the tip of the fingers</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic9.png" alt=""></div>
+									<h4 class="dez-title">Rinse with water</h4>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6 m-b30">
+								<div class="handwash-box">
+									<div class="handwash-media"><img src="images/handwash/pic10.png" alt=""></div>
+									<h4 class="dez-title">Your hands are clean</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Services END -->
+			<!-- Our Project -->
+			<div class="section-full content-inner bg-white">
+				<div class="container">
+					<div class="section-head covid-head text-center">
+						<h2 class="title">Coronavirus <span class="text-primary">Symptroms</span></h2>
+						<p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the. dummy text of the printing and typesetting industry</p>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-md-6 col-12">
+							<img class="symptoms-about" src="images/symptoms/pic1.png" alt="" />
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="symptoms">
+								<img src="images/symptoms/icon-1.png" alt="" />
+								<h3 class="dez-title">COUGH</h3>
+							</div>
+							<div class="symptoms">
+								<img src="images/symptoms/icon-2.png" alt="" />
+								<h3 class="dez-title">HIGH FEVER</h3>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="symptoms">
+								<img src="images/symptoms/icon-3.png" alt="" />
+								<h3 class="dez-title">SORE THROAT</h3>
+							</div>
+							<div class="symptoms">
+								<img src="images/symptoms/icon-4.png" alt="" />
+								<h3 class="dez-title">RUNNY NOSE</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Our Project END -->
+			
+			<!-- Content END-->
+		</div>
+		<!-- Footer -->
+		<footer class="site-footer covid-footer" style="background-image:url(images/background/bg12.jpg);">
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-6 col-lg-6 col-md-8 col-sm-6 col-12 text-left">
+							<span>© Copyright 2020 By<a href="javascript:void(0)"> Pakistan Covid Resource Center</a> All Rights
+								Reserved</span>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-4 col-sm-6 col-12 text-right">
+							<div class="footer-social">
+								<ul>
+									<li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer END-->
+		<!-- scroll top button -->
+		<button class="scroltop fa fa-chevron-up"></button>
+	</div>
+	<!-- JavaScript  files ========================================= -->
+	<script src="js/combining.js"></script><!-- COMBINING JS  -->
+	<!-- revolution JS FILES -->
+	<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/rev.slider.js"></script>
+	<script src="vendor/chartist/js/chartist.min.js"></script>
+    <script src="vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+	<script src="js/plugins-init/chartist-init.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+	<!-- Svganimation scripts -->
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+</body>
+</html>
