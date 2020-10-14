@@ -2599,11 +2599,11 @@ blockquote:before {
     vertical-align: middle;
     padding: 0;
     color: #efbb20;
-    margin-top: 0;
+    margin-top: 15px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    width: 170px;
+    /* width: 170px; */
     height: 84px;
     position: relative;
     z-index: 9
